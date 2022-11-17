@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 :root{
     --btn-logo--:#000000;
     --prime-color--: #212121;
@@ -15,14 +20,31 @@ body{
     background-color:var(--color-type-main--);
 }
 .list{
+    padding: 0;
+    margin: 0;
     list-style-type: none;
 }
 a{
     text-decoration: none;
 }
+.title{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
 /* .header-nav{
     background: var(--color-type-main--);
 } */
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+/* main-nav */
+.main-nav{
+    display: flex;
+}
 .logo{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -41,8 +63,28 @@ a{
     color: var(--btn-logo--);
 }
 /* navigator */
+.nav-link{
+    display: flex;
+}
 .nav-link .link{
+    margin-right: 50px;
+}
+/*.nav-link .link:last-child{
+    margin-right: 0;
+} */
+/* .nav-link .link:not(:last-child){
+    margin-right: 50px;
+} */
+/* .nav-link .link + .link{
+    margin-right: 50px;
+} */
+.nav-link .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--prime-color--);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -66,15 +108,26 @@ a{
 .header-contacts .link:focus{
     color: var(--accent-color--);
 }
+.header-contacts{
+    display: flex;
+}
+.header-contacts .link{
+    margin-right: 50px;
+}
+/* main */
 .hero{
     background-color:var(--hero-fon--) ;
+    text-align: center;
+    margin-bottom: 94px;
 }
 .hero-title{
+    margin: 0 auto;
+    padding-top: 200px;
+    margin-bottom: 30px;
     color: var(--color-type-main--);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -118,12 +171,14 @@ a{
     color: var(--color-type-main--);
 }
 .sub-button{
+    padding: 10px 32px;
+    margin: 0 auto;
     border:none;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.86;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
     letter-spacing: 0.06em;
     color: var(--color-type-main--);  
     background: var(--accent-color--);
@@ -138,11 +193,21 @@ a{
     border-radius: 4px;
 }
 .personal-text{
+    margin-top: 0;
+    margin-bottom: 10;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--prime-color--);
+}
+.personal-list{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-color--);
 }
 .section-job{
     font-size: 36px;
@@ -151,11 +216,22 @@ a{
     text-align: center;
 }
 /*  examples comandos */
+.examples
 .comand{
     background: var(--comand-fon--);
 }
+.examples{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.comand{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .comandos,
 .section-title{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -168,7 +244,7 @@ a{
     letter-spacing: 0.03em;
     text-align: center;
 }
-.comand-position{
+.command-position{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -203,6 +279,19 @@ a{
     color: var(--accent-color--);
 }
 /* main portfolio */
+.filtr{
+    display: flex;
+}
+.filtr .filter-items{
+    margin-right: 8px;
+}
+.filtr-nav{
+    margin-top: 94px;
+    margin-bottom: 34px;
+}
+.price-box{
+    margin-bottom: 94px;
+}
 .filter-items{
     background-color: var(--btn-portfolio--);
     font-family: inherit;
