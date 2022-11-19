@@ -18,7 +18,7 @@
 <body>
     <header class="header-nav">
         <div class="container main-nav">
-        <nav>
+        <nav class="navigation">
             <a href="./index.html" class="logo">Web<span class="header-logo">Studio</span></a>
             <ul class="nav-link list">
                 <li><a href="./index.html" class="link current">Студія</a></li>
@@ -33,11 +33,13 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="sub-button">Замовити послугу</button>
+        <section class="section hero">
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="sub-button">Замовити послугу</button>            
+            </div>
         </section>
-        <section class="personal">
+        <section class="section personal">
             <div class="container">
                 <h2 class="visually-hidden title">Наші Особистості</h2>
                 <ul class="personal-list list">
@@ -60,7 +62,7 @@
                 </ul>
             </div>
         </section>
-        <section class="examples">
+        <section class="section examples">
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="work-list list">
@@ -70,29 +72,29 @@
                 </ul>
             </div>
         </section>
-        <section class="comand">
+        <section class="section comand">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="commandos-list list">
-                    <li class="item"><img src="./img/img_1.jpg" alt="дизайнер" width="270" height="260">
+                    <li class="item"><img src="./img/img_1.jpg" alt="дизайнер" width="270" height="260" class="foto-commands">
                         <div class="comandos-box">
                             <h3 class="comand-name title">Ігор Дем'яненко</h3>
                             <p lang="en" class="command-position"> Designer</p>
                         </div>
                     </li>
-                    <li class="item"><img src="./img/img_2.jpg" alt="розробник_інтерфейсу" width="270" height="260">
+                    <li class="item"><img src="./img/img_2.jpg" alt="розробник_інтерфейсу" width="270" height="260" class="foto-commands">
                         <div class="comandos-box">
                             <h3 class="comand-name title">Ольга Рєпіна</h3>
                             <p lang="en" class="command-position">Frontend Developer</p>
                         </div>
                     </li>
-                    <li class="item"><img src="./img/img_3.jpg" alt="маркетинг" width="270" height="260">
+                    <li class="item"><img src="./img/img_3.jpg" alt="маркетинг" width="270" height="260" class="foto-commands">
                         <div class="comandos-box">
                             <h3 class="comand-name title">Микола Тарасов</h3>
                             <p lang="en" class="command-position">Marketing</p>
                         </div>
                     </li>
-                    <li class="item"><img src="./img/img_4.jpg" alt="дизайнер_інтерфейсу" width="270" height="260">
+                    <li class="item"><img src="./img/img_4.jpg" alt="дизайнер_інтерфейсу" width="270" height="260" class="foto-commands">
                         <div class="comandos-box">
                             <h3 class="comand-name title">Михайло Єрмаков</h3>
                             <p lang="en" class="command-position">UI Designer</p>
@@ -103,6 +105,7 @@
         </section>
     </main>
     <footer class="footer-down">
+        <div class="container">
             <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
             <address class="address">
                 <ul class="footer-link list">
@@ -111,7 +114,8 @@
                     <li><a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a></li>
                     <li><a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a></li>
                 </ul>
-            </address>
+            </address>            
+        </div>
     </footer>
 </body>
 </html>
