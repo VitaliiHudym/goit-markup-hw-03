@@ -46,7 +46,7 @@ a{
     margin-right: auto;
 }
 .section{
-    padding: 94px;
+    padding: 94px 0;
 }
 /* main-nav */
 .main-nav{
@@ -85,6 +85,8 @@ a{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    color: var(--prime-color--);
 
     font-weight: 500;
     font-size: 14px;
@@ -155,7 +157,10 @@ a{
     padding-bottom: 0;
 }
 .personal-item{
-    width: 1200px;
+    width: 270px;
+}
+.personal-item:last-child{
+    margin-right: 0;
 }
 .personal-link  {
     font-size: 14px;
@@ -170,18 +175,7 @@ a{
     background: var(--color-type-main--);
 }
 /* button */
-.filter-items{
-    background-color: var(--btn-portfolio--);
-    color: var(---prime-color--);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    /* font-size: 25px; */
-}
-.filter-items:hover,
-.filter-items:focus{
-    background-color: var(--accent-color--);
-    color: var(--color-type-main--);
-}
+
 .sub-button{
     padding: 10px 32px;
     margin: 0 auto;
@@ -215,6 +209,7 @@ a{
 }
 .personal-list{
     display: flex;
+    gap: 30px;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -223,9 +218,6 @@ a{
     letter-spacing: 0.03em;
 
     color: var(--second-color--);
-}
-.personal-list .items + .items{
-    margin-right: 30px;
 }
 .section-job{
     font-size: 36px;
@@ -242,6 +234,11 @@ a{
 }
 .work-foto:last-child{
     margin-right: 0;
+}
+.work-foto  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .comand{
     background: var(--btn-portfolio--);;
@@ -327,24 +324,46 @@ a{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
 .footer-link .link:hover,
 .footer-link .link:focus{
     color: var(--accent-color--);
 }
 /* main portfolio */
 .filtr{
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
-.btn-price{
+
+.filter-items {
+    background-color: var(--btn-portfolio--);
+    color: var(---prime-color--);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    /* font-size: 25px; */
+}
+
+.filter-items:hover,
+.filter-items:focus {
+    background-color: var(--accent-color--);
+    color: var(--color-type-main--);
+}
+.filter-btn{
     display: inline;
     margin-right: 8px;
 }
-.btn-price:last-child{
+.filter-btn:last-child{
     margin-right: 0;
 }
 .filter-items{
+    padding: 6px 22px;
     background-color: var(--btn-portfolio--);
 
     font-family: inherit;
@@ -359,7 +378,8 @@ a{
     border: none;
 }
 
- .filter-btn{
+ .btn-price{
+    padding: 6px 22px;
     background-color: var(--accent-color--);
     color: var(--color-type-main--);
 
@@ -370,6 +390,7 @@ a{
 
     border:none;
 }
+
 
 .price-foto{
     display: block;
@@ -398,9 +419,17 @@ a{
 .price-work{
     display: flex;
     flex-wrap: wrap;
+   
+    justify-content: space-between;
+    align-content: space-between;
 }
 .project-title{
     width: 322px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+    color: var(--prime-color--);
     margin: 0;
 }
 .div-price{
@@ -410,9 +439,8 @@ a{
 }
 
 .box-items{
-    margin-right: 24px;
-    margin-bottom: 30px;
 
+    width: calc((100%-  60px) / 3);
     border: 1px solid var(--price-border--);
 }
 
