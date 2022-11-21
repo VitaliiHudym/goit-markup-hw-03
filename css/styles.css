@@ -345,7 +345,7 @@ a{
 .filter-items {
     background-color: var(--btn-portfolio--);
     color: var(---prime-color--);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
     border-radius: 4px;
     /* font-size: 25px; */
 }
@@ -354,6 +354,7 @@ a{
 .filter-items:focus {
     background-color: var(--accent-color--);
     color: var(--color-type-main--);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-btn{
     display: inline;
@@ -419,12 +420,9 @@ a{
 .price-work{
     display: flex;
     flex-wrap: wrap;
-   
-    justify-content: space-between;
-    align-content: space-between;
+    gap: 30px;
 }
 .project-title{
-    width: 322px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -433,14 +431,13 @@ a{
     margin: 0;
 }
 .div-price{
-    display: block;
     padding: 20px 24px;
     
 }
 
 .box-items{
 
-    width: calc((100%-  60px) / 3);
+    width: calc((100% -  66px) / 3);
     border: 1px solid var(--price-border--);
 }
 
