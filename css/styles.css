@@ -308,7 +308,6 @@ img{
     font-style: normal;
 }
 .footer{
-    height: 252px;
     background: var(--hero-fon--);
     padding: 60px 0;
 }
