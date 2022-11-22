@@ -16,6 +16,9 @@
     --btn-portfolio--:#F5F4FA;
     --sub-btn--:#188CE8;
 }
+
+/* reset */
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--prime-color--);
@@ -33,6 +36,11 @@ body{
 }
 a{
     text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .header-nav{
     border-bottom: 1px solid var(--border-header--);
